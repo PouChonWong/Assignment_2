@@ -40,7 +40,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/Data/2016.csv"
+              "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/Data/2016_1.csv"
             },
             "key": "Country",
             "fields": ["Number"]
