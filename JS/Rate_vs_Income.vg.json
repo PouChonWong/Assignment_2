@@ -12,7 +12,7 @@
   "width": 500,
   "height": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/PouChonWong/FIT3179/Assignment_2/Data/2016.csv"
+    "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/Data/2016.csv"
   },
   "transform": [
     {"filter": "datum['GDP per capita'] > GDP_selector"},
