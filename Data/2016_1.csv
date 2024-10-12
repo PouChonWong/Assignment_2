@@ -1,0 +1,158 @@
+﻿Country,Region,Ranking,Number,GDP per capita
+Afghanistan,Southern Asia,153,2,0.382 
+Albania,Central and Eastern Europe,66,8.3,0.955 
+Algeria,Middle East and Northern Africa,130,4,1.053 
+Angola,Sub-Saharan Africa,108,5.7,0.847 
+Argentina,Latin America and Caribbean,95,6.2,1.151 
+Armenia,Central and Eastern Europe,122,4.7,0.861 
+Australia,Australia and New Zealand,19,17.4,1.444 
+Austria,Western Europe,128,4.2,1.450 
+Azerbaijan,Central and Eastern Europe,100,6,1.124 
+Bahrain,Middle East and Northern Africa,67,8.3,1.440 
+Bangladesh,Southern Asia,106,5.7,0.542 
+Belarus,Central and Eastern Europe,73,8,1.131 
+Belgium,Western Europe,157,0.5,1.425 
+Belize,Latin America and Caribbean,37,12.2,0.876 
+Benin,Sub-Saharan Africa,24,15.5,0.395 
+Bhutan,Southern Asia,131,4,0.853 
+Bolivia,Latin America and Caribbean,91,6.4,0.794 
+Bosnia and Herzegovina,Central and Eastern Europe,15,19.3,0.934 
+Botswana,Sub-Saharan Africa,74,8,1.094 
+Brazil,Latin America and Caribbean,75,7.8,1.088 
+Bulgaria,Central and Eastern Europe,138,3.4,1.113 
+Burkina Faso,Sub-Saharan Africa,52,9.7,0.320 
+Burundi,Sub-Saharan Africa,77,7.7,0.068 
+Cambodia,Southeastern Asia,137,3.6,0.556 
+Cameroon,Sub-Saharan Africa,45,10.5,0.525 
+Canada,North America,7,24.2,1.440 
+Chad,Sub-Saharan Africa,13,21,0.422 
+Chile,Latin America and Caribbean,104,5.8,1.217 
+China,Eastern Asia,101,6,1.028 
+Colombia,Latin America and Caribbean,88,6.6,1.030 
+Comoros,Sub-Saharan Africa,102,6,0.275 
+Congo,Sub-Saharan Africa,156,0.6,0.771 
+Dem. Rep. Congo,Sub-Saharan Africa,144,2.6,0.057 
+Costa Rica,Latin America and Caribbean,17,17.8,1.069 
+Croatia,Central and Eastern Europe,31,13.7,1.186 
+Cyprus,Western Europe,40,11.9,1.319 
+Czechia,Central and Eastern Europe,30,14,1.309 
+Denmark,Western Europe,126,4.5,1.442 
+Dominican Rep.,Latin America and Caribbean,29,14.1,1.028 
+Ecuador,Latin America and Caribbean,117,5,0.973 
+Egypt,Middle East and Northern Africa,48,10,0.954 
+El Salvador,Latin America and Caribbean,69,8.2,0.874 
+Estonia,Central and Eastern Europe,54,9.6,1.280 
+Ethiopia,Sub-Saharan Africa,58,9.2,0.293 
+Finland,Western Europe,90,6.5,1.406 
+France,Western Europe,87,6.7,1.395 
+Gabon,Sub-Saharan Africa,129,4.2,1.159 
+Georgia,Central and Eastern Europe,111,5.5,0.838 
+Germany,Western Europe,28,14.4,1.448 
+Ghana,Sub-Saharan Africa,78,7.7,0.631 
+Greece,Western Europe,20,16.8,1.249 
+Guatemala,Latin America and Caribbean,32,13.4,0.835 
+Guinea,Sub-Saharan Africa,149,2,0.224 
+Haiti,Latin America and Caribbean,132,4,0.341 
+Honduras,Latin America and Caribbean,124,4.6,0.694 
+Hong Kong,Eastern Asia,33,13,1.511 
+Hungary,Central and Eastern Europe,34,13,1.241 
+Iceland,Western Europe,56,9.3,1.427 
+India,Southern Asia,150,2,0.740 
+Indonesia,Southeastern Asia,43,10.9,0.951 
+Iran,Middle East and Northern Africa,92,6.4,1.118 
+Iraq,Middle East and Northern Africa,145,2.6,1.075 
+Ireland,Western Europe,86,7,1.483 
+Israel,Middle East and Northern Africa,65,8.3,1.338 
+Italy,Western Europe,71,8.1,1.355 
+Côte d'Ivoire,Sub-Saharan Africa,46,10.5,0.555 
+Jamaica,Latin America and Caribbean,60,9,0.893 
+Japan,Eastern Asia,140,3.2,1.380 
+Jordan,Middle East and Northern Africa,41,11.7,0.997 
+Kazakhstan,Central and Eastern Europe,42,11.5,1.229 
+Kenya,Sub-Saharan Africa,76,7.8,0.523 
+Kosovo,Central and Eastern Europe,23,15.7,0.901 
+Kuwait,Middle East and Northern Africa,112,5.5,1.617 
+Kyrgyzstan,Central and Eastern Europe,39,12,0.560 
+Laos,Southeastern Asia,136,4,0.680 
+Latvia,Central and Eastern Europe,25,15.2,1.218 
+Lebanon,Middle East and Northern Africa,55,9.4,1.123 
+Liberia,Sub-Saharan Africa,26,14.9,0.107 
+Libya,Middle East and Northern Africa,36,13,1.067 
+Lithuania,Central and Eastern Europe,151,2,1.269 
+Luxembourg,Western Europe,59,9.2,1.698 
+Macedonia,Central and Eastern Europe,64,8.5,1.019 
+Madagascar,Sub-Saharan Africa,44,10.7,0.280 
+Malawi,Sub-Saharan Africa,81,7.2,0.087 
+Malaysia,Southeastern Asia,70,8.2,1.251 
+Mali,Sub-Saharan Africa,83,7.1,0.313 
+Malta,Western Europe,121,4.9,1.308 
+Mauritania,Sub-Saharan Africa,80,7.3,0.614 
+Mauritius,Sub-Saharan Africa,57,9.3,1.144 
+Mexico,Latin America and Caribbean,123,4.7,1.115 
+Moldova,Central and Eastern Europe,155,1,0.692 
+Mongolia,Eastern Asia,133,4,0.989 
+Montenegro,Central and Eastern Europe,107,5.7,1.078 
+Morocco,Middle East and Northern Africa,134,4,0.841 
+Myanmar,Southeastern Asia,2,37.9,0.341 
+Namibia,Sub-Saharan Africa,120,5,0.933 
+Nepal,Southern Asia,118,5,0.446 
+Netherlands,Western Europe,152,2,1.465 
+New Zealand,Australia and New Zealand,93,6.4,1.361 
+Nicaragua,Latin America and Caribbean,21,16.4,0.694 
+Niger,Sub-Saharan Africa,51,9.8,0.133 
+Nigeria,Sub-Saharan Africa,16,18.7,0.752 
+North Cyprus,Western Europe,50,10,1.311 
+Norway,Western Europe,63,8.6,1.577 
+Pakistan,Southern Asia,94,6.3,0.688 
+Palestinian Territories,Middle East and Northern Africa,84,7,0.670 
+Panama,Latin America and Caribbean,147,2.4,1.183 
+Paraguay,Latin America and Caribbean,103,6,0.894 
+Peru,Latin America and Caribbean,142,3,0.996 
+Philippines,Southeastern Asia,38,12.1,0.812 
+Poland,Central and Eastern Europe,139,3.4,1.246 
+Portugal,Western Europe,49,10,1.276 
+Puerto Rico,Latin America and Caribbean,96,6.2,1.359 
+Qatar,Middle East and Northern Africa,135,4,1.824 
+Romania,Central and Eastern Europe,35,13,1.170 
+Russia,Central and Eastern Europe,115,5.2,1.232 
+Rwanda,Sub-Saharan Africa,89,6.6,0.328 
+Saudi Arabia,Middle East and Northern Africa,85,7,1.490 
+Senegal,Sub-Saharan Africa,148,2.2,0.443 
+Serbia,Central and Eastern Europe,154,1.5,1.034 
+Sierra Leone,Sub-Saharan Africa,18,17.5,0.365 
+Singapore,Southeastern Asia,10,21.7,1.646 
+Slovakia,Central and Eastern Europe,114,5.4,1.280 
+Slovenia,Central and Eastern Europe,62,8.6,1.299 
+Somalia,Sub-Saharan Africa,116,5.1,0.000 
+Somaliland,Sub-Saharan Africa,5,29.5,0.256 
+South Africa,Sub-Saharan Africa,4,30,1.024 
+South Korea,Eastern Asia,6,27.2,1.359 
+S. Sudan,Sub-Saharan Africa,146,2.6,0.394 
+Spain,Western Europe,109,5.6,1.343 
+Sri Lanka,Southern Asia,143,2.7,0.973 
+Sudan,Sub-Saharan Africa,127,4.5,0.631 
+Suriname,Latin America and Caribbean,119,5,1.097 
+Sweden,Western Europe,79,7.4,1.452 
+Switzerland,Western Europe,99,6,1.527 
+Syria,Middle East and Northern Africa,105,5.7,0.747 
+Taiwan,Eastern Asia,98,6.1,1.397 
+Tajikistan,Central and Eastern Europe,97,6.2,0.488 
+Tanzania,Sub-Saharan Africa,27,14.8,0.472 
+Thailand,Southeastern Asia,61,8.9,1.089 
+Togo,Sub-Saharan Africa,72,8,0.281 
+Trinidad and Tobago,Latin America and Caribbean,1,87,1.326 
+Tunisia,Middle East and Northern Africa,53,9.6,0.977 
+Turkey,Middle East and Northern Africa,3,32.8,1.165 
+Turkmenistan,Central and Eastern Europe,47,10.2,1.080 
+Uganda,Sub-Saharan Africa,11,21.3,0.347 
+Ukraine,Central and Eastern Europe,9,22,0.873 
+United Arab Emirates,Middle East and Northern Africa,14,20,1.574 
+United Kingdom,Western Europe,82,7.2,1.403 
+United States of America,North America,8,24,1.508 
+Uruguay,Latin America and Caribbean,22,15.9,1.182 
+Uzbekistan,Central and Eastern Europe,113,5.5,0.736 
+Venezuela,Latin America and Caribbean,141,3.1,1.134 
+Vietnam,Southeastern Asia,125,4.6,0.740 
+Yemen,Middle East and Northern Africa,110,5.6,0.579 
+Zambia,Sub-Saharan Africa,12,21,0.612 
+Zimbabwe,Sub-Saharan Africa,68,8.2,0.350 
