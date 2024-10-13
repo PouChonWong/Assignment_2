@@ -66,7 +66,7 @@
 social stigma and cultural or legal concerns. This data includes modeling based on global suicide patterns, and includes
 adjustments and extrapolations that aim to account for missing data and underreporting.</p>
         <div id="Suicide_Rate"></div>
-        <div id="Rate_vs_Income"></div>
+        <div id="Rate_vs_Income.vg"></div>
 
         <h2>About the Report</h2>
         <p>Close to 800 000 people die due to suicide every year, which is one person every 40 seconds. Suicide is a global phenomenon and occurs throughout the lifespan. Effective and evidence-based interventions can be implemented at population, sub-population and individual levels to prevent suicide and suicide attempts. There are indications that for each adult who died by suicide there may have been more than 20 others attempting suicide.</p>
@@ -79,10 +79,9 @@ adjustments and extrapolations that aim to account for missing data and underrep
 
         vegaEmbed('#Suicide_Rate', specVis1, { "actions": false });
 
-        vegaEmbed('#Rate_vs_Income', specVis2, { "actions": false }).then(function (result) {
-            // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-        }).catch(console.error);
-
+        vegaEmbed('#Rate_vs_Income', specVis2, { "actions": false }).then(function (result){
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
     </script>
 </body>
 
