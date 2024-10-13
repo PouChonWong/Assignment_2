@@ -76,9 +76,9 @@ adjustments and extrapolations that aim to account for missing data and underrep
         var specVis1 = "JS/Suicide_Rate.vg.json";
         var specVis2 = "JS/Rate_vs_Income.vg.json";
 
-        vegaEmbed('#vis1', specVis1, { "actions": false });
+        vegaEmbed('#Suicide_Rate', specVis1, { "actions": false });
 
-        vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+        vegaEmbed('#Rate_vs_Income', specVis2, { "actions": false }).then(function (result) {
             // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
         }).catch(console.error);
 
