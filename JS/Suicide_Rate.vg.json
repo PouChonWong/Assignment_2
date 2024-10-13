@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Suicide Rate of Countries in 2016",
+  "title": "Suicide Rate of Countries in 2020",
   "width": 500,
   "height": 400,
   "projection": {"type": "equalEarth"},
@@ -41,7 +41,7 @@
           "lookup": "properties.NAME",
           "from": {
             "data": {
-              "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/Data/2016.csv"
+              "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2020.csv"
             },
             "key": "Country",
             "fields": ["Number"]
