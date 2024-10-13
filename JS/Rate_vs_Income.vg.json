@@ -12,7 +12,7 @@
   "width": 500,
   "height": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/Data/2016.csv"
+    "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2020.csv"
   },
   "transform": [
     {"filter": "datum['GDP per capita'] > GDP_selector"},
@@ -37,25 +37,11 @@
         "input": "select",
         "options": [
           null,
-          "Western Europe",
-          "North America",
-          "Australia and New Zealand",
-          "Middle East and Northern Africa",
-          "Latin America and Caribbean",
-          "Southeastern Asia",
-          "Central and Eastern Europe",
-          "Sub-Saharan Africa"
+          "Western Europe", "North America", "Australia and New Zealand", "Middle East and Northern Africa", "Latin America and Caribbean", "Southeastern Asia", "Central and Eastern Europe", "Sub-Saharan Africa"
         ],
         "labels": [
           "Show All",
-          "Western Europe",
-          "North America",
-          "Australia and New Zealand",
-          "Middle East and Northern Africa",
-          "Latin America and Caribbean",
-          "Southeastern Asia",
-          "Central and Eastern Europe",
-          "Sub-Saharan Africa"
+          "Western Europe", "North America", "Australia and New Zealand", "Middle East and Northern Africa", "Latin America and Caribbean", "Southeastern Asia", "Central and Eastern Europe", "Sub-Saharan Africa"
         ],
         "name": "Continent:"
       }
@@ -69,36 +55,21 @@
       "title": "GDP per capita"
     },
     "y": {
-      "field": "2016",
+      "field": "Number",
       "type": "quantitative",
       "scale": {"zero": false},
       "axis": {"tickCount": 8},
       "title": "Suicide_Rate"
     },
     "color": {
-      "field": "Region",
-      "type": "nominal",
-      "title": "Continent",
+      "field": "Region", "type": "nominal", "title": "Continent",
       "scale": {
         "domain": [
-          "Western Europe",
-          "North America",
-          "Australia and New Zealand",
-          "Middle East and Northern Africa",
-          "Latin America and Caribbean",
-          "Southeastern Asia",
-          "Central and Eastern Europe",
-          "Sub-Saharan Africa"
+          "Western Europe", "North America", "Australia and New Zealand", "Middle East and Northern Africa", "Latin America and Caribbean", "Southeastern Asia", "Central and Eastern Europe", "Sub-Saharan Africa"
         ],
         "range": [
-          "#1f77b4",
-          "#ff7f0e",
-          "#2ca02c",
-          "#d62728",
-          "#9467bd",
-          "#8c564b",
-          "#e377c2",
-          "#7f7f7f"
+          "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f"
+        
         ]
       }
     },
@@ -106,7 +77,7 @@
     "tooltip": [
       {"field": "Country", "type": "nominal"},
       {"field": "Ranking", "type": "ordinal"},
-      {"field": "2016", "type": "quantitative"},
+      {"field": "Number", "type": "quantitative"},
     ]
   },
   
@@ -118,5 +89,4 @@
     }
   }
 }
-
 
