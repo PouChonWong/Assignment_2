@@ -59,7 +59,7 @@
       "type": "quantitative",
       "scale": {"zero": false},
       "axis": {"tickCount": 8},
-      "title": "Suicide_Rate"
+      "title": "No. of suicide per 100,000 people"
     },
     "color": {
       "field": "Region", "type": "nominal", "title": "Continent",
