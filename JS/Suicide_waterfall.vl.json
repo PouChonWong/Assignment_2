@@ -1,25 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title":"Number of suicides over the years",
   "data": {
-    "values": [
-      {"label": "Begin", "amount": 4000},
-      {"label": "Jan", "amount": 1707},
-      {"label": "Feb", "amount": -1425},
-      {"label": "Mar", "amount": -1030},
-      {"label": "Apr", "amount": 1812},
-      {"label": "May", "amount": -1067},
-      {"label": "Jun", "amount": -1481},
-      {"label": "Jul", "amount": 1228},
-      {"label": "Aug", "amount": 1176},
-      {"label": "Sep", "amount": 1146},
-      {"label": "Oct", "amount": 1205},
-      {"label": "Nov", "amount": -1388},
-      {"label": "Dec", "amount": 1492},
-      {"label": "End", "amount": 0}
-    ]
+    "url":"https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/Waterfall.csv"
   },
-  "width": 800,
-  "height": 450,
+  "background":"#ffffff",
+  "width": 1200,
+  "height": 600,
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
     {"window": [{"op": "lead", "field": "label", "as": "lead"}]},
@@ -39,36 +26,52 @@
       "calculate": "(datum.label !== 'Begin' && datum.label !== 'End' && datum.amount > 0 ? '+' : '') + datum.amount",
       "as": "text_amount"
     },
-    {"calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center"}
+    {"calculate": "(datum.sum + datum.previous_sum) / 2", "as": "center"},
+    {
+      "calculate": "datum.sum < datum.previous_sum ? datum.sum : ''",
+      "as": "sum_dec"
+    },
+    {
+      "calculate": "datum.sum > datum.previous_sum ? datum.sum : ''",
+      "as": "sum_inc"
+    }
   ],
   "encoding": {
     "x": {
       "field": "label",
       "type": "ordinal",
       "sort": null,
-      "axis": {"labelAngle": 0, "title": "Months"}
+      "axis": {"labelAngle": 0, "title": "Year"}
     }
   },
   "layer": [
     {
-      "mark": {"type": "bar", "size": 45},
+      "mark": {"type": "bar", "size": 45,"clip":true},
       "encoding": {
         "y": {
           "field": "previous_sum",
           "type": "quantitative",
-          "title": "Amount"
+          "title": "Total no. of suicides",
+          "axis": {"domain": false, "grid": false, "ticks": false},
+          "scale": {"domain":[2100000,2400000]}
         },
-        "y2": {"field": "sum"},
+        "y2": {
+          "field": "sum"
+        },
         "color": {
           "condition": [
             {
-              "test": "datum.label === 'Begin' || datum.label === 'End'",
+              "test": "datum.label === '2000'",
               "value": "#f7e0b6"
             },
             {"test": "datum.sum < datum.previous_sum", "value": "#f78a64"}
           ],
           "value": "#93c4aa"
-        }
+        },
+        "tooltip":[
+          {"title":"Total no. of suicides","field":"Total","type":"quantitative"},
+          {"title":"Change in Numbers","field":"amount","type":"quantitative"}
+        ]
       }
     },
     {
@@ -76,9 +79,10 @@
         "type": "rule",
         "color": "#404040",
         "opacity": 1,
-        "strokeWidth": 2,
-        "xOffset": -22.5,
-        "x2Offset": 22.5
+        "strokeWidth": 1.5,
+        "xOffset": -21.5,
+        "x2Offset": 21.5,
+        "clip":true
       },
       "encoding": {
         "x2": {"field": "lead"},
@@ -86,32 +90,20 @@
       }
     },
     {
-      "mark": {
-        "type": "text",
-        "dy": {"expr": "datum.amount >= 0 ? -4 : 4"},
-        "baseline": {"expr": "datum.amount >= 0 ? 'bottom' : 'top'"}
-      },
+      "mark": {"type": "text", "dy": -10, "baseline": "bottom","clip":true},
       "encoding": {
-        "y": {"field": "sum", "type": "quantitative"},
-        "text": {"field": "sum", "type": "nominal"}
+        "y": {"field": "sum_inc", "type": "quantitative"},
+        "text": {"field": "sum_inc", "type": "nominal"}
       }
     },
     {
-      "mark": {"type": "text", "fontWeight": "bold", "baseline": "middle"},
+      "mark": {"type": "text", "dy": 10, "baseline": "top","clip":true},
       "encoding": {
-        "y": {"field": "center", "type": "quantitative"},
-        "text": {"field": "text_amount", "type": "nominal"},
-        "color": {
-          "condition": [
-            {
-              "test": "datum.label === 'Begin' || datum.label === 'End'",
-              "value": "#725a30"
-            }
-          ],
-          "value": "white"
-        }
+        "y": {"field": "sum_dec", "type": "quantitative"},
+        "text": {"field": "sum_dec", "type": "nominal"}
       }
     }
   ],
-  "config": {"text": {"fontWeight": "bold", "color": "#404040"}}
+  "config": {"text": {"fontWeight": "bold", "color": "#404040"},"view": {"stroke": null}}
 }
+
