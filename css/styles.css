@@ -1,6 +1,6 @@
 .page {
     width: 1200px;
-    background-color: #ADD8E6;
+    background-color: #E5F3FD;
     margin: auto;
     padding: 50px;
     padding-top: 35px;
@@ -68,6 +68,6 @@ figcaption {
 }
 
 #box1 {
-    background-color: #ADD8E6;
+    background-color: #E5F3FD;
     border-radius: 30px;
 }
