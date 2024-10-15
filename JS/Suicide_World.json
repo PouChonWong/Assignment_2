@@ -10,7 +10,7 @@
     "color": "dodgerblue"
   },
   "background": "#E5F3FD",
-  "width": 300,
+  "width": 500,
   "height": 400,
   "layer": [
     {"mark": {"type": "arc", "innerRadius": 30, "stroke": "#fff"}},
