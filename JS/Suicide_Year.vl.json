@@ -4,7 +4,7 @@
     "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/Waterfall.csv"
   },
   "title": {
-    "text": "No. of suicide over the years",
+    "text": "Number of suicide over the years",
     "fontSize": 18,
     "color": "dodgerblue"
   },
