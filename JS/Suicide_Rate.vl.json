@@ -5,8 +5,10 @@
     "fontSize": 18,
     "color": "dodgerblue"
   },
+  "background": "#ADD8E6",
   "width": 800,
   "height": 400,
+  
   "projection": {"type": "equalEarth"},
   "config": {"view": {"stroke": null}},
   "data": {
