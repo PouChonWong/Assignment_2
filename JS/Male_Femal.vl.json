@@ -1,0 +1,39 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2000_2021.csv"
+  },
+  "title": {
+    "text": "Male vs Female",
+    "subtitle": "No. of suicide between Male and Female",
+    "fontSize": 18,
+    "color": "dodgerblue"
+  },
+  "background": "#ffffff",
+  "width": 500,
+  "repeat": {"layer": ["Male", "Female"]},
+  "spec": {
+    "mark": {"type": "bar", "cornerRadius": 3},
+    "encoding": {
+      "x": {"field": "Region", "type": "nominal"},
+      "y": {
+        "aggregate": "sum",
+        "field": {"repeat": "layer"},
+        "type": "quantitative",
+        "title": "Total no. of suicides (per 100,000 people)"
+      },
+      "color": {"datum": {"repeat": "layer"}, "title": "Gender"},
+      "xOffset": {"datum": {"repeat": "layer"}},
+      "tooltip": [
+        {"title": "Region", "field": "Region", "type": "nominal"},
+        {"title": "No. of suicide (male)", "field": "Male", "type": "nominal"},
+        {
+          "title": "No. of suicide (female)",
+          "field": "Female",
+          "type": "nominal"
+        }
+      ]
+    }
+  },
+  "config": {"mark": {"invalid": null}}
+}

@@ -1,0 +1,114 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2020.csv"
+  },
+  "title": {
+    "text": "Suicide Rate vs GDP per capita",
+    "subtitle": ["Hint: Use mouse to zoom and pan and double-click to reset"],
+    "fontSize": 18,
+    "color": "dodgerblue"
+  },
+  "width": 800,
+  "height": 400,
+  "transform": [
+    {"filter": "datum['GDP per capita'] > GDP_selector"},
+    {
+      "filter": "Continent_selection == null || datum.Region == Continent_selection"
+    }
+  ],
+  "params": [
+    {"name": "view", "select": "interval", "bind": "scales"},
+    {
+      "name": "GDP_selector",
+      "value": 0,
+      "bind": {
+        "input": "range",
+        "min": 0,
+        "max": 1.6,
+        "step": 0.01,
+        "name": "GDP per capita:"
+      }
+    },
+    {
+      "name": "Continent_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Western Europe",
+          "North America",
+          "Australia and New Zealand",
+          "Middle East and Northern Africa",
+          "Latin America and Caribbean",
+          "Southeastern Asia",
+          "Central and Eastern Europe",
+          "Sub-Saharan Africa"
+        ],
+        "labels": [
+          "Show All",
+          "Western Europe",
+          "North America",
+          "Australia and New Zealand",
+          "Middle East and Northern Africa",
+          "Latin America and Caribbean",
+          "Southeastern Asia",
+          "Central and Eastern Europe",
+          "Sub-Saharan Africa"
+        ],
+        "name": "Continent:"
+      }
+    }
+  ],
+  "mark": "circle",
+  "encoding": {
+    "x": {
+      "field": "GDP per capita",
+      "scale": {"type": "linear"},
+      "title": "GDP per capita"
+    },
+    "y": {
+      "field": "Number",
+      "type": "quantitative",
+      "scale": {"zero": false},
+      "axis": {"tickCount": 8},
+      "title": "No. of suicide per 100,000 people"
+    },
+    "color": {
+      "field": "Region",
+      "type": "nominal",
+      "title": "Continent",
+      "scale": {
+        "domain": [
+          "Western Europe",
+          "North America",
+          "Australia and New Zealand",
+          "Middle East and Northern Africa",
+          "Latin America and Caribbean",
+          "Southeastern Asia",
+          "Central and Eastern Europe",
+          "Sub-Saharan Africa"
+        ],
+        "range": [
+          "#1f77b4",
+          "#ff7f0e",
+          "#2ca02c",
+          "#d62728",
+          "#9467bd",
+          "#8c564b",
+          "#e377c2",
+          "#7f7f7f"
+        ]
+      }
+    },
+    "opacity": {"value": 0.65},
+    "tooltip": [
+      {"title": "Country:", "field": "Country", "type": "normal"},
+      {"title": "Ranking:", "field": "Ranking", "type": "ordinal"},
+      {"title": "Number:", "field": "Number", "type": "quantitative"}
+    ]
+  },
+  "config": {
+    "legend": {"labelFontSize": 12, "titleFontSize": 14, "orient": "right"}
+  }
+}
