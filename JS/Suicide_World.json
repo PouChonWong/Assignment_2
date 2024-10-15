@@ -9,6 +9,7 @@
     "fontSize": 18,
     "color": "dodgerblue"
   },
+  "background": "#ADD8E6",
   "width": 300,
   "height": 400,
   "layer": [
