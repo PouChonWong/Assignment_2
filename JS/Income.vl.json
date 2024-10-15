@@ -1,8 +1,13 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": {"text": "Suicide Rate vs GDP per capita"},
   "data": {
     "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2020.csv"
+  },
+  "title": {
+    "text": "Suicide Rate vs GDP per capita",
+    "subtitle": "No. of suicide between Male and Female",
+    "fontSize": 18,
+    "color": "dodgerblue"
   },
   "width": 800,
   "height": 400,
@@ -89,7 +94,6 @@
       {"field": "GDP per capita", "type": "quantitative", "title": "GDP:"}
     ]
   },
-  "config": {
-    "legend": {"labelFontSize": 12, "titleFontSize": 14, "orient": "right"}
+  "config": {"mark": {"invalid": null}}
   }
 }
