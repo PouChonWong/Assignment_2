@@ -9,7 +9,7 @@
     "fontSize": 16,
     "anchor": "start"
   },
-  "width": 500,
+  "width": 800,
   "height": 400,
   "data": {
     "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2020.csv"
