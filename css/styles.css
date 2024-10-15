@@ -22,20 +22,13 @@ p {
 }
     
 }
+
 .column {
     float: left;
     width: 45%;
     padding-right: 30px;
     padding-left: 30px;
 }
-
-.column1{
-    background-color: #E5F3FD;
-    color: black;
-    text-align: center;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
 
 .column3 {
     float: left;
