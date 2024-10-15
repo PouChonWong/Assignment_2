@@ -11,6 +11,7 @@
   },
   "background": "#E5F3FD",
   "width": 500,
+  "height": 400,
   "repeat": {"layer": ["Male", "Female"]},
   "spec": {
     "mark": {"type": "bar", "cornerRadius": 3},
