@@ -97,14 +97,14 @@
       }
     },
     {
-      "mark": {"type": "text", "dy": -10, "baseline": "bottom", "clip": true, "size":7},
+      "mark": {"type": "text", "dy": -10, "baseline": "bottom", "clip": true, "size":10},
       "encoding": {
         "y": {"field": "sum_inc", "type": "quantitative"},
         "text": {"field": "sum_inc", "type": "nominal"}
       }
     },
     {
-      "mark": {"type": "text", "dy": 10, "baseline": "top", "clip": true, "size":7},
+      "mark": {"type": "text", "dy": 10, "baseline": "top", "clip": true, "size":10},
       "encoding": {
         "y": {"field": "sum_dec", "type": "quantitative"},
         "text": {"field": "sum_dec", "type": "nominal"}
