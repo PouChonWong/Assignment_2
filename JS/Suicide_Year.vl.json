@@ -9,7 +9,7 @@
     "color": "dodgerblue"
   },
   "background": "#E5F3FD",
-  "width": 1100,
+  "width": 1000,
   "height": 600,
   "transform": [
     {"window": [{"op": "sum", "field": "amount", "as": "sum"}]},
