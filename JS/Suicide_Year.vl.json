@@ -8,7 +8,7 @@
     "fontSize": 18,
     "color": "dodgerblue"
   },
-  "background": "#ADD8E6",
+  "background": "#E5F3FD",
   "width": 1100,
   "height": 600,
   "transform": [
@@ -97,14 +97,14 @@
       }
     },
     {
-      "mark": {"type": "text", "dy": -10, "baseline": "bottom", "clip": true},
+      "mark": {"type": "text", "dy": -10, "baseline": "bottom", "clip": true, "size":7},
       "encoding": {
         "y": {"field": "sum_inc", "type": "quantitative"},
         "text": {"field": "sum_inc", "type": "nominal"}
       }
     },
     {
-      "mark": {"type": "text", "dy": 10, "baseline": "top", "clip": true},
+      "mark": {"type": "text", "dy": 10, "baseline": "top", "clip": true, "size":7},
       "encoding": {
         "y": {"field": "sum_dec", "type": "quantitative"},
         "text": {"field": "sum_dec", "type": "nominal"}
