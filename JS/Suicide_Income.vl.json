@@ -11,7 +11,7 @@
   },
   "background": "#ADD8E6",
 
-  "width": 800,
+  "width": 400,
   "height": 400,
   "transform": [
     {"filter": "datum['GDP per capita'] > GDP_selector"},
