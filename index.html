@@ -2,87 +2,229 @@
 <html>
 
 <head>
-  
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.25.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.22.2"></script>
-    <!-- CSS file -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
-    <style>
-     
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ADE0DC;
-            margin: 0;
-            padding: 0;
-        }
+  <title>World's Suicides Rate</title>
+  <!-- Import Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+   <!-- Import pure.css -->
+  <link rel="stylesheet" href=cs/main.css>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        header {
-            background-color: #ADE0DC;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
+  <!-- Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="'https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap'" rel="stylesheet">
 
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-
-        h1 {
-            font-size: 24px;
-            color: #000000;
-        }
-
-        p {
-            font-size: 16px;
-            color: #000000;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-        }
-      
-    </style>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 </head>
+<style>
+  body {
+    font-family: 'Playfair', serif;
+    background-image: url('background.jpg');
+  }
+</style>
 
 <body>
-    <header>
-        <h1>World's Suicide Rate Report</h1>
-        <p style="color: black;">Every suicide-related death is tragic. Research does indicate, however, that suicide rates can be decreased with more knowledge and assistance.
-      <p style="color: black;"> In order to do this, suicide has to be acknowledged as a public health issue and its prevalence needs to be decreased.</p>
-    </header>
-
-    <div class="container">
-        <h2>Visualizations</h2>
-        <p align="center" style="text-align: justify;">Estimated annual number of suicides per 100,000 people. Suicide deaths are underreported in many countries due to
-social stigma and cultural or legal concerns. This data includes modeling based on global suicide patterns, and includes
-adjustments and extrapolations that aim to account for missing data and underreporting.</p>
-        <div id="Suicide_Rate"></div>
-        <div id="Rate_vs_Income.vg"></div>
-
-        <h2>About the Report</h2>
-        <p>Close to 800 000 people die due to suicide every year, which is one person every 40 seconds. Suicide is a global phenomenon and occurs throughout the lifespan. Effective and evidence-based interventions can be implemented at population, sub-population and individual levels to prevent suicide and suicide attempts. There are indications that for each adult who died by suicide there may have been more than 20 others attempting suicide.</p>
-
+  <!-- Page -->
+  
+  <div class="page"> 
+    
+    <!-- Heading -->
+    <h1 style="font-size: 50px; text-align: center;">World's Suicides Rate</h1> 
+    <div class="row"> 
+      <div class="column3">
+        <p>
+         Every <strong>suicide-related</strong> death is tragic. Research does indicate, however, that <strong>suicide rates</strong> can be decreased with more knowledge and assistance.
+          In order to do this, suicide has to be acknowledged as a public health issue and its prevalence needs to be decreased. In many countries, suicides are under-reported for various reasons. 
+          A major one is that deaths in general — not just suicides — are not well-recorded in many countries. 
+          It shows that in some cases, not all deaths are registered in a country’s central vital registration system. 
+      </div>
+      <div class="column3">
+        <p>
+          Where vital registration systems are underdeveloped, statisticians must estimate the number of deaths and their causes from partial data and particular studies.
+          Researchers typically define suicides as deaths that were classified as deaths caused by “intentional self-harm” in the International Classification for Diseases (ICD). 
+          This includes people who had self-harmed but had not intended to die, and they may not be considered suicides by the country's particular legal definition.
+          Self-harm deaths tend to be under-recorded, even among countries that have a large share of deaths registered.
+      </div>
+      <div class="column3">
+        <p>
+          This is partly because, in many countries, suicide is highly stigmatized. In some countries, suicides and suicide attempts can be a criminal offense.
+          For these reasons, suicides may be misclassified, especially as deaths due to "events of undetermined intent", accidents, homicides or unknown causes.
+          To account for this, the WHO Global Health Estimates and IHME Global Burden of Disease study reclassify a proportion of deaths reported with those causes as suicides. 
+          This is done according to the fraction that is estimated to be deaths by suicide and aims to account for missing data and underreporting.
+        </p>
+      </div>
     </div>
+    
+    <!-- Spaces Between -->
+    <hr style="height:5px;border-width:0">
+    <h2 style="font: size 30px;"> Suicide Rates in different countries </h2>
+    <hr style="height:15px;border-width:0">
+    <!-- Spaces Between -->
+    
+    <!-- Map  -->
+    <div id="box1">
+      <div class="padcell">
+          <div id="vis1"></div>
+      </div> 
+      <p style="text-align:center;"><small><i> Not all deaths are registered in a country’s central vital registration system.</i></small></p>
+      <div class="row">
+        <div class="column3">
+          <p>
+            Suicide rates vary greatly around the world, most likely due to a variety of circumstances. 
+            This includes variations in underlying mental health conditions and their treatments, stress in one's personal and financial life, 
+            limitations on suicide methods, knowledge and identification of suicide, and other elements.
+          </p>      
+      </div>
+    </div>
+    <!-- End Map -->
+      
+    <!-- Spaces Between -->
+    <hr style="height:25px;border-width:0">
+    <!-- Spaces Between -->
+      
+    <!-- GDP -->
+    <h2 style="font: size 30px;">  The Influence of GDP on Suicide Rate</h2>
+    <div id="box1">
+      <div class="row">
+      <div class="column">
+          <div id="vis2"></div>
+      </div> 
+      <div class="row">
+        <div class="column3">
+          <p>
+            Suicide rates frequently rise in nations that are going through recessions or downturns in the economy. Poverty, debt, and unemployment are major causes. 
+            For instance, suicide rates rose in nations severely affected by the global financial crisis of 2008. 
+            Rising suicide rates have also been associated with urbanisation and growing social isolation in many countries, particularly in highly competitive or individualistic cultures.
+          </p>
+      </div>
+    </div>
+    <!-- End GPD -->
+        
+    <!-- Spaces Between -->
+    <hr style="height:25px;border-width:0">
+    <!-- Spaces Between -->
+    
+    <!-- Bar Section -->
+    <h2>Suicides are more common among mens</h2>
+    <div id="box1">
+      <div class="row"> 
+        <div class="column">
+          <p>
+            Men are far more likely than women to commit suicide worldwide. Male suicide rates are two to four times greater than female rates in various nations. 
+            This discrepancy is linked to men using more deadly techniques, stigma around mental illness, and a reluctance to ask for assistance. 
+            Women tend to attempt suicide more frequently than males, despite men having greater completion rates. The term "gender paradox" is frequently used to describe this occurrence in suicidal behaviour.
+          </p>
+        </div>
+        <div class="description-center">
+          <div id="vis3"></div>
+        </div>
+    </div>
+    <!-- End Bar -->
+      
+    <!-- Spaces Between -->
+    <hr style="height:25px;border-width:0">
+    <!-- Spaces Between -->
+      
+    <!-- Radial -->
+    <h2 style="font: size 30px;">  Global Distribution of Suicide Rates by Continent</h2>
+    <div id="box1">
+      <div class="row">
+        <div class="column">
+          <p>
+         The total number of suicide (per 100,000 population) by continent during 2000~2021:
+          </p>
+          <p>
+            <b style="color:#e55756 ;"><strong>Europe</strong></b>: With 18,448 suicides (per 100,000 population),  <b style="color:#e55756 ;"><strong>Europe</strong></b> leads by a large margin. This could be attributed to several factors such as higher rates in countries like Russia, Lithuania, and Belarus, which have historically reported high suicide rates due to economic challenges, mental health issues, and alcohol abuse.
+          <p>
+            <b style="color:#f58518 ;"><strong>Asia</strong></b>: With 6,209 suicides (per 100,000 population), also has a substantial share of global suicides. Countries like South Korea, Japan, and India are known for high suicide rates due to societal pressures, intense academic and work environments, and mental health stigmas. also a significant portion of the total global suicides.
+          </p>
+          <p>
+            <b style="color:#72b7b3 ;"><strong>North America</strong></b>: With 4,719 suicides (per 100,000 population), the suicide numbers are lower than in <b style="color:#e55756 ;"><strong>Europe</strong></b> and <b style="color:#f58518 ;"><strong>Asia</strong></b>, though countries like the United States have notable rates, influenced by mental health issues, economic stress, and access to firearms.
+          <p>
+            <b style="color:#eeca3b ;"><strong>South America</strong></b>: With 4,572 suicides (per 100,000 population), suicide rates here are moderately high but generally lower than <b style="color:#e55756 ;"><strong>Europe</strong></b> or <b style="color:#f58518 ;"><strong>Asia</strong></b>. Brazil and Guyana are two countries where higher suicide rates are observed, though other regions of South America show relatively lower rates due to cultural and social factors.
+          </p>
+          <p>
+            <b style="color:#4c78a8 ;"><strong>Africa:</strong></b>: With 1,103 suicides (per 100,000 population), the continent records fewer suicides overall, possibly due to underreporting and cultural stigmas around suicide. Many African countries may not have comprehensive reporting mechanisms, which could affect these figures.
+          <p>
+            <b style="color:#55a24a ;"><strong>Oceania:</strong></b>: With 939 suicides(per 100,000 population), the smallest region in population size, also has the lowest number of suicides. While countries like Australia have seen rising suicide rates, overall figures remain lower compared to other continents, potentially due to better mental health initiatives and smaller populations.
+        </div>
+        <div class="column">
+          <div id="vis4"></div>
+          <p>
+            The bulk of suicides worldwide occur in <b style="color:#e55756 ;"><strong>Europe</strong></b> and <b style="color:#f58518 ;"><strong>Asia</strong></b>, most likely as a result of a confluence of demographics, mental health issues, and socioeconomic pressures. <b style="color:#4c78a8 ;"><strong>Africa:</strong></b> and <b style="color:#55a24a ;"><strong>Oceania:</strong></b>, on the other hand, may have distinct underlying causes, such as cultural differences or underreporting, that influence their suicide figures, while having lower absolute numbers.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Radial -->
+      
+    <!-- Spaces Between-->
+    <hr style="height:5px;border-width:0">
+    <!-- Spaces Between -->
+    
+    <!--Waterfall -->
+    <h2 style="font: size 30px;"> Number of Trips Made Yearly</h2>
+    <div id="box1">
+      <div class="description-center">
+        <div id="vis2"></div>
+      </div>
+      <div class="row"> 
+        <div class="column3">
+          <p>
+            A general downward trend in the total number of suicides from 2000 to 2021. In 2000, there were about 2,294,414 suicides, while by 2021, the number dropped to approximately 2,154,098.
+            There are years where the suicide rates increased slightly, such as in 2003, 2004, and 2008, which is visible by the green blocks indicating an upward movement.
+            However, the general trend shows a reduction, particularly noticeable after 2008, with a steady decline until 2021.
+        </div>
+        <div class="column3">
+          <p>
+            Some years, such as 2020 and 2021, a steep decline is observed in 2020, where the number of suicides drops to 2,120,002.
+            The downward trend continues into 2021, where the total number of suicides further decreases to 2,154,098. 
+            The significant decreases in suicide numbers, marked by the large red blocks, including the impact of the COVID-19 pandemic.
+            </p>
+        </div>
+        <div class="column3">
+          <p>
+            Overall, a gradual reduction in the global suicide rate over the two decades, with minor fluctuations during certain years. 
+            The steady decline suggests ongoing global efforts in suicide prevention may have played a role in this trend.
+            </p>
+        </div>
+      </div>
+    </div>
+    <!-- End Waterfall -->
+    <hr style="height:40px;border-width:0">
+   
+  </div>
 
-    <script type="text/javascript">
-        var specVis1 = "JS/Suicide_Rate.vg.json";
-        var specVis2 = "JS/Rate_vs_Income.vg.json";
 
-        vegaEmbed('#Suicide_Rate', specVis1, { "actions": false });
 
-        vegaEmbed('#Rate_vs_Income', specVis2, { "actions": false }).then(function (result){
+  <script type="text/javascript">
+    var specVis1 = "JS/Suicide_Rate.vl.json";
+    var specVis2 = "JS/Suicide_Income.vl.json";
+    var specVis3 = "JS/Male_Femal.vl.json";
+    var specVis4 = "JS/Suicide_World.json";
+    var specVis5 = "JS/Suicide_Year.vl.json";
+
+    vegaEmbed('#vis1', specVis1, { "actions": false, renderer:'svg'});
+
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
-    </script>
+
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
+  </script>
 </body>
 
 </html>
