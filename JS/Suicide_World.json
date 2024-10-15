@@ -1,4 +1,4 @@
-e{
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2000_2021.csv"
