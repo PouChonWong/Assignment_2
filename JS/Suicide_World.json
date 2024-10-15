@@ -1,4 +1,4 @@
-{
+e{
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "data": {
     "url": "https://raw.githubusercontent.com/PouChonWong/Assignment_2/refs/heads/main/Data/2000_2021.csv"
@@ -9,7 +9,7 @@
     "fontSize": 18,
     "color": "dodgerblue"
   },
-  "background": "#ADD8E6",
+  "background": "#E5F3FD",
   "width": 300,
   "height": 400,
   "layer": [
