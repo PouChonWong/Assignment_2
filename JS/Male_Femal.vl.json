@@ -25,12 +25,9 @@
       "color": {"datum": {"repeat": "layer"}, "title": "Gender"},
       "xOffset": {"datum": {"repeat": "layer"}},
       "tooltip": [
-        {"title": "Region", "field": "Region", "type": "nominal"},
-        {"title": "No. of suicide (male)", "field": "Male", "type": "nominal"},
-        {
-          "title": "No. of suicide (female)",
-          "field": "Female",
-          "type": "nominal"
+        {"title": "Region:", "field": "Region", "type": "nominal"},
+        {"title": "No. of suicide (male):", "field": "Male", "type": "nominal"},
+        {"title": "No. of suicide (female):", "field": "Female", "type": "nominal"
         }
       ]
     }
