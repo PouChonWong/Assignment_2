@@ -1,5 +1,5 @@
 .page {
-    width: 1300px;
+    width: 1200px;
     background-color: #E5F3FD;
     margin: auto;
     padding: 50px;
@@ -51,18 +51,6 @@ h1 {
     text-align: center;
 }
 
-.description-center2 {
-    padding-left: 365px;
-}
-
-.description-center3 {
-    padding-left: 105px;
-}
-
-.paddcell {
-    padding-left: 150px
-    margin-bottom: 40px;
-}
 
 figcaption {
     font-family: 'PT Sans', sans-serif;
