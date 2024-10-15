@@ -32,11 +32,8 @@
       "legend": {"symbolStrokeColor": "#ffffff"}
     },
     "tooltip": [
-      {"title": "Region", "field": "Region", "type": "nominal"},
-      {
-        "title": "Total no. of suicide",
-        "field": "Total",
-        "type": "quantitative"
+      {"title": "Region:", "field": "Region", "type": "nominal"},
+      {"title": "Total no. of suicide:", "field": "Total","type": "quantitative"
       }
     ]
   },
