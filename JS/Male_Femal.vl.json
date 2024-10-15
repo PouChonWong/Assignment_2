@@ -9,7 +9,7 @@
     "fontSize": 18,
     "color": "dodgerblue"
   },
-  "background": "#ffffff",
+  "background": "#ADD8E6",
   "width": 500,
   "repeat": {"layer": ["Male", "Female"]},
   "spec": {
