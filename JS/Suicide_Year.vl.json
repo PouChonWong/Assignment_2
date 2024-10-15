@@ -8,7 +8,7 @@
     "fontSize": 18,
     "color": "dodgerblue"
   },
-   "background": "#ADD8E6",
+  "background": "#ADD8E6",
   "width": 1100,
   "height": 600,
   "transform": [
