@@ -49,7 +49,8 @@
     "tooltip": [
       {"field": "Country", "type": "nominal", "title": "Country:"},
       {"field": "Ranking", "type": "ordinal", "title": "Rank:"},
-      {"field": "Number", "type": "quantitative", "title": "Number:"}
+      {"field": "Number", "type": "quantitative", "title": "Number:"},
+      {"field": "GDP per capita", "type": "quantitative", "title": "GDP:"}
     ]
   },
   "config": {
