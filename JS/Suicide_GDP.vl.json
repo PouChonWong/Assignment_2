@@ -10,7 +10,7 @@
     "color": "dodgerblue"
   },
   "background": "#E5F3FD",
-  "width": 500,
+  "width": 400,
   "height": 200,
   "transform": [
     {"filter": "datum['GDP per capita'] > GDP_selector"},
