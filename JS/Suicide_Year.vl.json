@@ -62,10 +62,10 @@
         "y2": {"field": "sum"},
         "color": {
           "condition": [
-            {"test": "datum.label === '2000'", "value": "#f7e0b6"},
-            {"test": "datum.sum < datum.previous_sum", "value": "#f78a64"}
+            {"test": "datum.label === '2000'", "value": "#eeca3b"},
+            {"test": "datum.sum < datum.previous_sum", "value": "#e55756"}
           ],
-          "value": "#93c4aa"
+          "value": "#55a24a"
         },
         "tooltip": [
           {
